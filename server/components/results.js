@@ -15,10 +15,5 @@ router.get('/random', (req, res) => {
 
 })
 
-router.get('/search', (req, res) => {
-    const result = Result.random;
-    res.send(result);
-
-})
 
 module.exports = router;

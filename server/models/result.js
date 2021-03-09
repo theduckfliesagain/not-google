@@ -19,6 +19,14 @@ class Result {
         return resultsData[randID];
     }
 
+    static search(str) {
+        const searchResults = resultsData.filter(result => {
+            return result.heading.toLowerCase().includes(str) === true || result.desc.toLowerCase().includes(str) === true;
+        })
+
+        return searchResults;
+    }
+
     static findByID(id) {
         try {
             const resultData = resultsData.filter(result => result.id === id)[0];
