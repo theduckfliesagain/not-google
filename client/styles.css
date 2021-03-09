@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family:arial, sans-serif;
+    
+}
+
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+    padding:30px 30px;
+    font-size: 18px;
+    height: 60px;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    margin:6px;
+}
+
+#list-2{
+    font-size: 16px;
+}
+
+#logo{
+   
+    height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+img{
+  height:120px;
+  
+}
+
+#search-section{
+    height:160px;
+    background-color: blue;
+    
+}
