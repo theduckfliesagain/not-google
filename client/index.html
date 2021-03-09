@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,51 +9,73 @@
     <script defer src="index.js"></script>
     <title>Not Google</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul id= "list-1">
-                <li>About</li>
-                <li>Store</li>
-            </ul>
-            <ul id= "list-2">
-                <li>Gmail</li>
-                <li>Images</li>
-                <li>Dot image placeholder</li>
-                <li>circle placeholder</li>
-            </ul>
-
-            
-        </nav>
-    </header>
-
-    <section id="logo">
-   
-    <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png">
+    <div id="search-page">
+        <header>
+            <nav>
+                <ul id="list-1">
+                    <li>About</li>
+                    <li>Store</li>
+                </ul>
+                <ul id="list-2">
+                    <li>Gmail</li>
+                    <li>Images</li>
+                    <li>Dot image placeholder</li>
+                    <li>circle placeholder</li>
+                </ul>
 
 
-    </section>
+            </nav>
+        </header>
 
-    <section id="search-section">
-       
+        <section id="logo-main">
+
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png">
+
+
+        </section>
+
+        <section id="search-section">
+
             <form>
                 <div>
-                    <input type="text">
+                    <input id="search-bar" type="text">
                 </div>
                 <div id="button-section">
-                    <input type ="submit" value= "Google search">
-                    <input type="submit" value ="I'm feeling lucky">
+                    <input type="submit" name="search" value="Google search">
+                    <!-- <input type="submit" name="lucky" value ="I'm feeling lucky"> -->
                 </div>
             </form>
-       
 
 
-    </section>
 
-    <footer>
+        </section>
+
+        <footer>
 
 
-    </footer>
+        </footer>
+    </div>
+
+    <div id="results-page">
+        <nav>
+            <a href="index.html"><img id="logo-small" src = https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png></a>
+            <form>
+                <input type="text">
+            </form>
+    
+            
+         </nav>
+         <div id="lower-nav">
+     
+         </div>  
+     
+         <section id="results">
+         </section>
+    </div>
 
 </body>
+
 </html>
