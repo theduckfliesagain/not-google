@@ -6,8 +6,6 @@ const Result = require('../models/result')
 
 router.get('*', (req, res) => {
     const searchResults = Result.search(req.query.q);
-    // res.send(result);
-    console.log(searchResults);
     res.send(searchResults);
 })
 
