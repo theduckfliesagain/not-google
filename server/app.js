@@ -3,7 +3,6 @@ const express = require('express');
 const cors = require('cors');
 
 // Required files
-// const data = require('./data');
 const resultRoutes = require('./components/results');
 const searchQueries = require('./components/search');
 
