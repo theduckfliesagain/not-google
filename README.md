@@ -2,6 +2,7 @@
 ## A less limited search engine
 
 
+
 ## Installation and Usage
 
 ### Installation
@@ -12,10 +13,11 @@
 
 ### Usage
 
-* Run `npm start` in server folder to launch server.
-* Visit `localhost:3000` in your browser to view the server contents.
 * Run `start index.html` in client folder to launch client.
 
+* Or use the netlify app:
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/facbb01f-0812-4787-85ba-30b5baf705ce/deploy-status)](https://app.netlify.com/sites/noodlesearch/deploys)
 
 ## Changelog
 
