@@ -35,7 +35,6 @@ class Result {
             throw new Error(`No result with that ID. Error: ${error}`)
         }
     }
-
 }
 
 module.exports = Result;
