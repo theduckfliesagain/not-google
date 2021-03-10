@@ -18,8 +18,8 @@ randomBtn.addEventListener('click', presentRandomResult)
 function presentResults(e) {
     e.preventDefault();
     const searchText = document.getElementById('search-bar').value;
-
-    let fetchURL =  url + searchText ? `search?q=${searchText}` : `results`;
+    const routeURL =  searchText ? `search?q=${searchText}` : `results`;
+    let fetchURL =  url + routeURL;
 
     fetch(fetchURL)
         .then(resp => resp.json())
