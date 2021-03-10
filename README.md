@@ -1,5 +1,5 @@
 # Noodle
-## A limited search engine
+## A less limited search engine
 
 
 ## Installation and Usage
@@ -19,10 +19,7 @@
 
 ## Changelog
 
-* Created basic Noodle API
-* Created front-end with search page and results page
-* Connected front and back end
-* Added favicon
+* Switched API to Google Search - browse the internet forever!
 
 ## Bugs
 * Back button functionality lost when displaying results on same page
