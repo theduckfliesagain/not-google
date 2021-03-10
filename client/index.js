@@ -24,11 +24,9 @@ function presentResults(e) {
     fetch(fetchURL)
         .then(resp => resp.json())
         .then(results => showResults(results))
-        // .catch(error => console.log(error))
 
     togglePage();
 
-    // fetch("localhost:3000/search")
 }
 
 
