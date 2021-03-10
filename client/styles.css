@@ -38,6 +38,10 @@ footer{
 
 }
 
+li#center{
+    margin-right:120px;
+}
+
 /* Search Bar */
 
 input[type=text]{
