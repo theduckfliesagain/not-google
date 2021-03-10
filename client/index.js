@@ -39,12 +39,6 @@ function presentRandomResult(e) {
 
     fetch(fetchURL)
         .then(resp => resp.json())
-        .then(result => window.open(result.url))
-        // .catch(error => console.log(error))
-
-    // togglePage();
-
-    // fetch("localhost:3000/search")
 }
 
 function togglePage(){
@@ -81,13 +75,19 @@ function createResultElement(result){
     const headingElement = document.createElement("h2")
     const urlElement = document.createElement("h4")
     const descElement = document.createElement("p")
+    const linkElement = document.createElement("a");
 
     headingElement.textContent = result.heading;
     urlElement.textContent= result.url;
     descElement.textContent = result.desc;
 
+    linkElement.setAttribute("href", result.url);
+    
+    linkElement.appendChild(headingElement)
+
+
     resultElement.appendChild(urlElement);
-    resultElement.appendChild(headingElement);
+    resultElement.appendChild(linkElement);
     resultElement.appendChild(descElement);
 
     resultElement.className = "search-result"
