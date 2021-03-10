@@ -20,7 +20,7 @@ function presentResults(e) {
     const routeURL =  searchText ? `search?q=${searchText}` : `results`;
     
     const fetchURL =  url + routeURL;
-    
+  
     fetch(fetchURL)
         .then(resp => resp.json())
         .then(results => showResults(results))
