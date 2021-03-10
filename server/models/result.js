@@ -15,13 +15,12 @@ class Result {
 
     static get random() {
         const randID = Math.floor(Math.random() * resultsData.length);
-        console.log(randID)
         return resultsData[randID];
     }
 
     static search(str) {
         const searchResults = resultsData.filter(result => {
-            return result.heading.toLowerCase().includes(str) === true || result.desc.toLowerCase().includes(str) === true;
+            return result.heading.toLowerCase().includes(str.toLowerCase()) === true || result.desc.toLowerCase().includes(str.toLowerCase()) === true;
         })
 
         return searchResults;
